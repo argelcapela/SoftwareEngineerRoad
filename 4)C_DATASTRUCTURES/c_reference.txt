@@ -1,0 +1,10 @@
+______________C - theory_____________
+
+header: is a file with a lot of macros and functions already done. Can be embeded in you code by
+#include <name header> before the main;
+
+
+_____________C - commands____________
+
+ncurses header:
+	
