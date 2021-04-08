@@ -1,15 +1,16 @@
 SIMPLE GIT REFERENCE - BY ARGEL CAPELA
 
+
 ______________ GOOD  THEORY __________________________________________________________________
 
 --COMMIT: alterar;
---comitar È modificar;
+--comitar √© modificar;
 --GITHUB: Repositorio remoto;
---GIT: RepositÛrio local;
---branch master: È a pasta principal;
---untracked files: s„o arquivos o GIT n„o t· vendo;
+--GIT: Reposit√≥rio local;
+--branch master: √© a pasta principal;
+--untracked files: s√£o arquivos o GIT n√£o t√° vendo;
 
--- GIT BASH: terminal especÌfico para GIT com mais comandos;
+-- GIT BASH: terminal espec√≠fico para GIT com mais comandos;
 
 
 
@@ -21,37 +22,37 @@ git config --global user.name "MEU NOME"
 git config --global user.email "ARGEL@HOTMAIL.COM"
 
 git init <URL>						// inicia o GIT (versionamento) do seu projeto;
-git status 						// mostra os arquivos que o GIT t· olhando;
+git status 						// mostra os arquivos que o GIT t√° olhando;
 	
-git add <NOME>						// faz o GIT monitorar esse arquivo; sÛ se usa quando o projeto tem arquivos NOVOS, dps sÛ o [commit -am]; Sempre que um commit È feito, È como se o GIT parasse de monitorar. A cada modificaÁ„o ou alteraÁ„o no projeto tem que ser usado o add dnv, ent„o por isso È mais f·cil usar o commit -am que j· adianta os dois em um sÛ. MAS quando novos arquivos s„o adicionados no projeto tem que digitar o [git add -A] no unha sen„o n„o funciona;
+git add <NOME>						// faz o GIT monitorar esse arquivo; s√≥ se usa quando o projeto tem arquivos NOVOS, dps s√≥ o [commit -am]; Sempre que um commit √© feito, √© como se o GIT parasse de monitorar. A cada modifica√ß√£o ou altera√ß√£o no projeto tem que ser usado o add dnv, ent√£o por isso √© mais f√°cil usar o commit -am que j√° adianta os dois em um s√≥. MAS quando novos arquivos s√£o adicionados no projeto tem que digitar o [git add -A] no unha sen√£o n√£o funciona;
 git add -A   						// add todos os arquivos do diretorio;
 
-git commit -m "Primeiro Commit"	  			// envia pro meu GIT, as alteraÁıes do projeto;
+git commit -m "Primeiro Commit"	  			// envia pro meu GIT, as altera√ß√µes do projeto;
 git log							// mostra todos os commits feitos no branch
 
-git commit -am "Segundo Commit!"			// envia pro meu GIT todas as alteraÁıes do projeto, sem precisar usar git add -A de novo, toda vez que houver uma modificaÁ„o;
+git commit -am "Segundo Commit!"			// envia pro meu GIT todas as altera√ß√µes do projeto, sem precisar usar git add -A de novo, toda vez que houver uma modifica√ß√£o;
 
 
 
 
 
 
-git reset --mixed   <hash completo do commit ou sÛ 7 primeiros n˙meros>			// 
-git reset --soft    <hash completo do commit ou sÛ 7 primeiros n˙meros>			// 
-git reset --hard    <hash completo do commit ou sÛ 7 primeiros n˙meros>			// todos os arquivos voltam RADICALMENTE, para o estado em que se encontravam naquele COMMIT. N„o È recomendado usar quando trabalhando com equipes, CUIDADO! 
+git reset --mixed   <hash completo do commit ou s√≥ 7 primeiros n√∫meros>			// 
+git reset --soft    <hash completo do commit ou s√≥ 7 primeiros n√∫meros>			// 
+git reset --hard    <hash completo do commit ou s√≥ 7 primeiros n√∫meros>			// todos os arquivos voltam RADICALMENTE, para o estado em que se encontravam naquele COMMIT. N√£o √© recomendado usar quando trabalhando com equipes, CUIDADO! 
 
 
 
-git help <command>					// obtÈm ajuda com o comando;
+git help <command>					// obt√©m ajuda com o comando;
 
 
 _____BRANCHES_____________________________________________________________________________________
 
-git branch						// lista todos os branches, o que tiver * È o atual;
+git branch						// lista todos os branches, o que tiver * √© o atual;
 
-git branch <NOME DO BRANCH NOVO>			// cria um branch novo a partir do estado atual do projeto; a ideia È desenvolver uma nova funcionalidade sem alterar o MASTER, sem o projeto "ONGOING" sair do AR; depois de terminar se der certo eu sÛ mando as alteraÁıes para o BRANCH MASTER;
+git branch <NOME DO BRANCH NOVO>			// cria um branch novo a partir do estado atual do projeto; a ideia √© desenvolver uma nova funcionalidade sem alterar o MASTER, sem o projeto "ONGOING" sair do AR; depois de terminar se der certo eu s√≥ mando as altera√ß√µes para o BRANCH MASTER;
 
-git checkout <NOME DO BRANCH>				// troca de branch; os arquivos e alteraÁıes s„o feitos automaticamente; ISSO … TOP!
+git checkout <NOME DO BRANCH>				// troca de branch; os arquivos e altera√ß√µes s√£o feitos automaticamente; ISSO √â TOP!
 
 git push origin -- delete <NAME OF REMOTE BRANCH>       // deleta o branch remoto;
 
@@ -63,41 +64,41 @@ ACCESS GITHUB REPOSITORY->SETTINGS->DEFAULT BRANCH->SELETE AND PRESS UPDATE;    
 _____________________________________________________________________________________________
 
 
-git diff 						// mostra o que foi modificado nos arquivos do repositÛrio;
+git diff 						// mostra o que foi modificado nos arquivos do reposit√≥rio;
 git diff --name-only				 	// nome dos arquivos que foram alterados;
 git diff <NOME DO ARQUIVO>				// mostra tudo o que foi modificado nesse arquivo;
-git checkout HEAD -- <NOME DO ARQUIVO>			// restaurar o arquivo para sua ˙ltima vers„o comitada;
+git checkout HEAD -- <NOME DO ARQUIVO>			// restaurar o arquivo para sua √∫ltima vers√£o comitada;
 
 
 ___ SSH AND ACESSO REMOTO _________________________________________________________________________
 
 ls -al ~/.ssh	
 
-// verifica se existem chaves ssh; se o diretorio n„o existe È pq n„o tem nenhuma;
+// verifica se existem chaves ssh; se o diretorio n√£o existe √© pq n√£o tem nenhuma;
 
 ssh-keygen -o || ssh-keygen -t ed25519      -C "argelcapeladossantos@gmail.com" || ssh-keygen -t rsa -b 4096  -C "argelcapeladossantos@gmail.com"	      			
 
 // gera uma nova chave ssh
 
 
-#BUSCA A CHAVE EM USER/SSR WINDOWS OU /HOME/USER/.SSH LINUX -> abri a p˙blica (.pub)-> copia o cÛdigo->  e l· no site do github-> SETTINGS -> DEPLOY KEYS -> ADD A NEW KEY -> cola o codigo do arquivo (.pub) -> escolhe um titulo -> SEJA FELIZ;
+#BUSCA A CHAVE EM USER/SSR WINDOWS OU /HOME/USER/.SSH LINUX -> abri a p√∫blica (.pub)-> copia o c√≥digo->  e l√° no site do github-> SETTINGS -> DEPLOY KEYS -> ADD A NEW KEY -> cola o codigo do arquivo (.pub) -> escolhe um titulo -> SEJA FELIZ;
 
 
-git remote add origin <URL DO REPOSIT”RIO>		// faz a conex„o entre o repositorio local e o remoto GITHUB; se estiver errada vai dar BO; DENTRO DO REPOSITORIO-> CODE -> SSH -> COPIA A URL;
+git remote add origin <URL DO REPOSIT√ìRIO>		// faz a conex√£o entre o repositorio local e o remoto GITHUB; se estiver errada vai dar BO; DENTRO DO REPOSITORIO-> CODE -> SSH -> COPIA A URL;
 
-git remote -v								// visualiza as conexıes do repositÛrio atual;
+git remote -v								// visualiza as conex√µes do reposit√≥rio atual;
 
 #antes de dar um push, sempre dar um pull para evitar problemas!#
 
-git push -u origin master						// passa todos os arquivos para o repositÛrio remoto;
+git push -u origin master						// passa todos os arquivos para o reposit√≥rio remoto;
 
 ________________________________________________________________________________________________
 
-*criando um arquivo chamado .gitignore sem extens„o, todos os arquivos que estiverem listados l·, n„o apareceram no repositorio remoto! Mt ˙til em casos de informaÁıes confidenciais que n„o podem ser exibidas para qualquer um no projeto;*
+*criando um arquivo chamado .gitignore sem extens√£o, todos os arquivos que estiverem listados l√°, n√£o apareceram no repositorio remoto! Mt √∫til em casos de informa√ß√µes confidenciais que n√£o podem ser exibidas para qualquer um no projeto;*
 
 
 
-git revert --no-edit <ID DO COMMIT>					// salvo o estado atual em um commit chamado revert, e reseta o repositÛrio para o ˙ltimo comite feito anteriormente;
+git revert --no-edit <ID DO COMMIT>					// salvo o estado atual em um commit chamado revert, e reseta o reposit√≥rio para o √∫ltimo comite feito anteriormente;
 
 
 
@@ -106,8 +107,8 @@ git revert --no-edit <ID DO COMMIT>					// salvo o estado atual em um commit cha
 git push origin :<nome branch>						// deleta o branch remoto;
 git branch -D <nome branch>                                             // deleta o branch local;
 
-git pull <origem> <branch que est· indo>				// pega os arquivos novos do repositorio remoto para o seu local;
+git pull <origem> <branch que est√° indo>				// pega os arquivos novos do repositorio remoto para o seu local;
 
-git clone <URL PROJETO NO GITHUB>					// copia todo o repositÛrio de um projeto para a sua maquina;
+git clone <URL PROJETO NO GITHUB>					// copia todo o reposit√≥rio de um projeto para a sua maquina;
 
 
