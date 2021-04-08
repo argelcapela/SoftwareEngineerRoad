@@ -1,4 +1,6 @@
-THEORY
+SIMPLE GIT REFERENCE - BY ARGEL CAPELA
+
+______________ GOOD  THEORY __________________________________________________________________
 
 --COMMIT: alterar;
 --comitar é modificar;
@@ -12,7 +14,8 @@ THEORY
 
 
 
-COMMANDS
+_____________ PRACTICE ______________________________________________________________________________
+
 git config --list
 git config --global user.name "MEU NOME"
 git config --global user.email "ARGEL@HOTMAIL.COM"
@@ -42,12 +45,22 @@ git reset --hard    <hash completo do commit ou só 7 primeiros números>			// tod
 git help <command>					// obtém ajuda com o comando;
 
 
-
+_____BRANCHES_____________________________________________________________________________________
 
 git branch						// lista todos os branches, o que tiver * é o atual;
+
 git branch <NOME DO BRANCH NOVO>			// cria um branch novo a partir do estado atual do projeto; a ideia é desenvolver uma nova funcionalidade sem alterar o MASTER, sem o projeto "ONGOING" sair do AR; depois de terminar se der certo eu só mando as alterações para o BRANCH MASTER;
+
 git checkout <NOME DO BRANCH>				// troca de branch; os arquivos e alterações são feitos automaticamente; ISSO É TOP!
 
+git push origin -- delete <NAME OF REMOTE BRANCH>       // deleta o branch remoto;
+
+ACCESS GITHUB REPOSITORY->SETTINGS->DEFAULT BRANCH->SELETE AND PRESS UPDATE;     // change the default branch in GITHUB;
+
+
+
+
+_____________________________________________________________________________________________
 
 
 git diff 						// mostra o que foi modificado nos arquivos do repositório;
@@ -56,37 +69,31 @@ git diff <NOME DO ARQUIVO>				// mostra tudo o que foi modificado nesse arquivo;
 git checkout HEAD -- <NOME DO ARQUIVO>			// restaurar o arquivo para sua última versão comitada;
 
 
+___ SSH AND ACESSO REMOTO _________________________________________________________________________
+
+ls -al ~/.ssh	
+
+// verifica se existem chaves ssh; se o diretorio não existe é pq não tem nenhuma;
+
+ssh-keygen -o || ssh-keygen -t ed25519      -C "argelcapeladossantos@gmail.com" || ssh-keygen -t rsa -b 4096  -C "argelcapeladossantos@gmail.com"	      			
+
+// gera uma nova chave ssh
 
 
-$ls -al ~/.ssh								// verifica se existem chaves ssh; se o diretorio não existe é pq não tem nenhuma;
-$ssh-keygen -t ed25519      -C "argelcapeladossantos@gmail.com"		// gera uma nova chave ssh guardada em ..//user//ssh//	
-$ssh-keygen -t rsa -b 4096  -C "argelcapeladossantos@gmail.com"	        // gera uma nova chave ssh guardada em ..//user//ssh//	
-*depois de criar as chaves, abri a pública, copia o código, e lá no site do github cria uma chave ssh, cola o codigo lá e escolhe um titulo;*
+#BUSCA A CHAVE EM USER/SSR WINDOWS OU /HOME/USER/.SSH LINUX -> abri a pública (.pub)-> copia o código->  e lá no site do github-> SETTINGS -> DEPLOY KEYS -> ADD A NEW KEY -> cola o codigo do arquivo (.pub) -> escolhe um titulo -> SEJA FELIZ;
 
 
+git remote add origin <URL DO REPOSITÓRIO>		// faz a conexão entre o repositorio local e o remoto GITHUB; se estiver errada vai dar BO; DENTRO DO REPOSITORIO-> CODE -> SSH -> COPIA A URL;
 
-
-
-git remote add origin https:\\www.github.com\capelaplus.com		// faz a conexão entre o repositorio local e o remoto GITHUB;
 git remote -v								// visualiza as conexões do repositório atual;
 
-
-
-
-
-
 #antes de dar um push, sempre dar um pull para evitar problemas!#
+
 git push -u origin master						// passa todos os arquivos para o repositório remoto;
 
-
-
-
-
-
+________________________________________________________________________________________________
 
 *criando um arquivo chamado .gitignore sem extensão, todos os arquivos que estiverem listados lá, não apareceram no repositorio remoto! Mt útil em casos de informações confidenciais que não podem ser exibidas para qualquer um no projeto;*
-
-
 
 
 
@@ -99,14 +106,7 @@ git revert --no-edit <ID DO COMMIT>					// salvo o estado atual em um commit cha
 git push origin :<nome branch>						// deleta o branch remoto;
 git branch -D <nome branch>                                             // deleta o branch local;
 
-
-
-
-
 git pull <origem> <branch que está indo>				// pega os arquivos novos do repositorio remoto para o seu local;
-
-
-
 
 git clone <URL PROJETO NO GITHUB>					// copia todo o repositório de um projeto para a sua maquina;
 
