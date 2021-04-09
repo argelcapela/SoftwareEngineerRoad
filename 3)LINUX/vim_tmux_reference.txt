@@ -1,4 +1,4 @@
-_____________VIM________________________________________________
+_____________VIM_______________________________
 
 
 
@@ -10,4 +10,71 @@ _____________VIM________________________________________________
 
 
 
-___________TMUX________________________________________________
+___________TMUX_______________________________
+
+
+
+GOOD THEORY:
+
+// ATTACH/ATTACHED - is like inside the session //
+
+// DETTACH/DETTACHED - you leaf the session, aren't inside it // 
+
+
+
+PRACTICE:
+
+// create session !out of tmux or will bug! //
+tmux new -s <sessian_name>
+
+// leave tmux
+Ctrl + b | d  !! use it to avoid problems saving the sessions!! 
+
+exit
+
+
+// list sessions !inside any sessian! //
+tmux ls
+
+// change session !!   //
+tmux a -t <SESSION NAME> !!out of tmux or will bug !!
+
+// kill sessian //
+tmux kill-session -t <name> !inside or out whatever!
+
+tmux kill-server
+
+// open new window(pane) //
+Ctrl + b | "
+Ctrl + b | %
+
+// change current window(pane) //
+Ctrl + b | o
+
+// remove current window(pane) //
+Ctrl + b | x | type y | enter
+
+// resize window(pane) //
+
+tmux resize-pane  -U <value>   !up!
+		  -D <value>   !down!
+		  -L <value>   !left!
+		  -R <value>   !right!
+!!! using for example the -U and value, will be
+added <value> i don't know, in direction to -U, and so on, -D the window will go in direction to down, the line dividing will go in direction to down, you understood, now try yourself, test and    !!!
+
+// install tmux //
+pacman -S tmux
+
+// new windows(panes) opened in the current directory and others configs //
+
+after install > 
+
+creates the file ~/.tmux.conf and type there >
+
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}" >
+
+rest the tmux and should work normal
+

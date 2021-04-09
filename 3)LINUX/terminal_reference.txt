@@ -1,1 +1,13 @@
-____ LINUX TERMINAL ________________________________________________
+____ LINUX TERMINAL _________________________
+
+
+PRACTICE:
+
+// TABS //
+
+ctrl + shift + t  !new tab!
+
+ctrl + shift + w !close tab!
+
+ctrl + pageup/pagedown  !navigate between tabs!
+
