@@ -1,0 +1,24 @@
+BY ARGEL CAPELA
+!!PROGRAMMING IS MATH EXTENDED, IF YOU DON'T UNDERSTAND MATH,
+WILL BE HARDER TO REALLY BE A GOOD DEVELOPER  !!
+________________ Math 1 __________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUNCTIONS:
+
+// STANDARD DEVIATION //
+
+
+
