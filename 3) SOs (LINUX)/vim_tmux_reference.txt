@@ -1,5 +1,63 @@
+BY ARGEL CAPELA! AFTER KNOW IT BY BY VSCODE AND SUBLIME TEXT 3 
+I LOVE VIIIIMMMMMM!!!!
+
 _____________VIM_______________________________
 
+GOOD THEORY:
+
+// BAD THINGS OF VIM //
+1) We can't paste text outside the terminal easily;
+2) Just is productive as you master the commands, until it, you will suffer a little bit;
+
+
+
+PRACTICE:
+
+// MODES //
+
+ESC   ! normal mode !
+i     ! insert mode !
+
+
+// IN NORMAL MODE //
+
+:q!  				!exit without save!
+
+:w!				!save without exit!
+
+:x!				!??exit and save??!
+
+:<line number>			!go to line tal!
+
+gg				!first line of the document!
+
+GG || $				!last line of the document!
+
+v + <arrow button("setas") 	!select text!
+
+dd  				!delete current line!
+
+yyp				!duplicate current line!
+
+ggVG				!select all text in document!
+
+y				!copy selection!
+
+d				!cut selection!
+
+p				!paste!
+
+u				!undo(desfazer)!
+
+r				!redo(refazer)!
+
+>				!identar(espaço para ficar tudo bonitão)!
+
+
+
+// (IN NORMAL MODE) find and replace //
+
+:%s/<find term>/<replace term>/g      !each occurrence in the document!
 
 
 
