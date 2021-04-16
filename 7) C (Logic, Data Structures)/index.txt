@@ -1,0 +1,449 @@
+BY ARGEL CAPELA
+!!!is like the English of the programm language wolrd! Domain it and will domain any other language!!!!
+
+// LANGUAGE FOUNDATIONS //
+
+
+Introduction:
+
+	Compiler				(OK)
+
+	pacman -S install gcc			!! install compiler |  GCC !!
+
+	gcc <file.c> -o <namecompiledfile>	!! compile <file.c> !!
+
+	gcc <file.c> -o <namecompiledfile> -lm  !! if using <math.h> as header!!
+	./<namecompiledfile>			!! execute compiled files !!!linux terminal!!
+
+
+	Keywords & Identifier			(__)
+
+	Variables & Constants			(__)
+
+	Data Types				(__)
+
+	Input/Output				(__)
+
+	Operators				(OK)
+
+Flow Control:
+
+	if...else				(OK)
+
+	for Loop				(OK)
+
+	while Loop				(OK)
+
+	break and continue			(__)
+
+	switch...case				(OK)
+
+	Programming goto			(__)
+
+Functions:
+
+	Programming Functions			(__)
+
+	User-defined Functions			(OK)
+
+	Function Types				(__)
+
+	Recursion				(__)
+
+	Storage Class				(__)
+
+Arrays:
+
+	Programming Arrays			(OK)
+
+	Multi-dimensional Arrays		(OK)
+
+	Arrays & Function			(__)
+
+Pointers:
+
+	Programming Pointers			(OK)
+
+	Pointers & Arrays			(OK)
+
+	Pointers And Functions			(OK)
+
+	Memory Allocation			(OK)
+
+		->calloc();
+
+		->malloc();
+
+		->free();
+
+		->ealloc();
+
+Strings:
+
+	Programming String			(OK)
+
+	String Functions			(OK)
+
+Structure:
+
+	Structure				(OK)
+
+	Struct & Pointers			(OK)
+
+	Struct & Function			(OK)
+
+	Unions					(OK)
+
+Extra:
+
+	Files Input/Output				(OK)
+
+	Enumeration			(OK)
+
+	Preprocessors			(OK)
+
+		->#include <name header>
+
+		->#define <constant name> <value>
+
+		->#define <function name>() (<function commands>)
+
+		->#ifdef #elif #else #endif
+
+
+	Standard Library			(OK)
+		
+		->stdio.h
+
+		->stdlib.h
+
+		->string.h
+
+		->math.h
+
+		->ctype.h
+
+	History				(__)
+
+
+
+
+
+
+// EXERCISE LANGUAGE FOUNDATIONS //
+
+
+1) C "Hello, World!" Program 							(OK)
+
+2)C Program to Print an Integer (Entered by the User) 				(OK)
+
+3)C Program to Add Two Integers 						(OK)
+
+4)C Program to Multiply Two Floating-Point Numbers 				(OK)
+
+5)C Program to Find ASCII Value of a Character					(__)
+
+6)C Program to Compute Quotient and Remainder 					(?)
+
+7)C Program to Find the Size of int, float, double and char			(__)
+
+8)C Program to Demonstrate the Working of Keyword long				(__)
+
+9)C Program to Swap Two Numbers							(?)
+
+10)C Program to Check Whether a Number is Even or Odd				(?)
+
+11)C Program to Check Whether a Character is a Vowel or Consonant		(?)
+
+12)C Program to Find the Largest Number Among Three Numbers			(__)
+
+13)C Program to Find the Roots of a Quadratic Equation				(?)
+
+14)C Program to Check Leap Year							(__)
+
+15)C Program to Check Whether a Number is Positive or Negative			(__)
+
+16)C Program to Check Whether a Character is an Alphabet or not			(__)
+
+17)C Program to Calculate the Sum of Natural Numbers				(__)
+
+18)C Program to Find Factorial of a Number					(__)
+
+19)C Program to Generate Multiplication Table					(__)
+
+20)C Program to Display Fibonacci Sequence					(__)
+
+21)C Program to Find GCD of two Numbers						(?)
+
+22)C Program to Find LCM of two Numbers						(?)
+
+23)C Program to Display Characters from A to Z Using Loop			(__)
+
+24)C Program to Count Number of Digits in an Integer				(__)
+
+25)C Program to Reverse a Number						(?)
+
+26)C Program to Calculate the Power of a Number					(__)
+
+27)C Program to Check Whether a Number is Palindrome or Not			(?)
+
+28)C Program to Check Whether a Number is Prime or Not				(?)
+
+29)C Program to Display Prime Numbers Between Two Intervals			(?)
+
+30)C Program to Check Armstrong Number						(?)
+
+31)C Program to Display Armstrong Number Between Two Intervals			(?)
+
+32)C Program to Display Factors of a Number					(?)
+
+33)C Program to Make a Simple Calculator Using switch...case			(?)
+
+34)C Program to Display Prime Numbers Between Intervals Using Function		(?)
+
+35)C Program to Check Prime or Armstrong Number Using User-defined Function	(?)
+
+36)C Program to Check Whether a Number can be Expressed as Sum of Two Prime Numbers (?)
+
+37)C Program to Find the Sum of Natural Numbers using Recursion			(__)
+
+38)C Program to Find Factorial of a Number Using Recursion			(__)
+
+39)C Program to Find G.C.D Using Recursion					(?)
+
+40)C Program to Convert Binary Number to Decimal and vice-versa 		(?)
+
+41)C Program to Convert Octal Number to Decimal and vice-versa			(?)
+
+42)C Program to Convert Binary Number to Octal and vice-versa			(?)
+
+43)C Program to Reverse a Sentence Using Recursion				(?)
+
+44)C program to calculate the power using recursion				(?)
+
+45)C Program to Calculate Average Using Arrays					(OK)
+
+46)C Program to Find Largest Element in an Array				(OK)
+
+47)C Program to Calculate Standard Deviation					(?)
+
+48)C Program to Add Two Matrices Using Multi-dimensional Arrays			(OK)
+
+49)C Program to Multiply Two Matrices Using Multi-dimensional Arrays		(?)
+
+50)C Program to Find Transpose of a Matrix					(?)
+
+51)C Program to Multiply two Matrices by Passing Matrix to a Function		(?)
+
+52)C Program to Access Array Elements Using Pointer				(OK)
+
+53)C Program Swap Numbers in Cyclic Order Using Call by Reference		(__)
+
+54)C Program to Find Largest Number Using Dynamic Memory Allocation		(OK)
+
+55)C Program to Find the Frequency of Characters in a String			(__)
+
+56)C Program to Count the Number of Vowels, Consonants and so on		(__)
+
+57)C Program to Remove all Characters in a String Except Alphabets		(__)
+
+58)C Program to Find the Length of a String					(__)
+
+60)C Program to Concatenate Two Strings						(__)
+
+61)C Program to Copy String Without Using strcpy()				(__)
+
+62)C Program to Sort Elements in Lexicographical Order (Dictionary Order)	(__)
+
+63)C Program to Store Information of a Student Using Structure			(__)
+
+64)C Program to Add Two Distances (in inch-feet system) using Structures	(?)
+
+65)C Program to Add Two Complex Numbers by Passing Structure to a Function	(?)
+
+66)C Program to Calculate Difference Between Two Time Periods			(__)
+
+67)C Program to Store Information of Students Using Structure			(__)
+
+68)C Program to Store Data in Structures Dynamically				(__)
+
+69)C Program to Write a Sentence to a File					(__)
+
+70)C Program to Read a Line From a File and Display it				(__)
+
+71)C Program to Display its own Source Code as Output				(__)
+
+72)C Program to Print Pyramids and Patterns					(__)
+
+
+
+// STUDY FOUNDATIONS OF  DATA STRUCTURES //
+
+Array
+
+Linked List
+
+Stack
+
+Queue
+
+Searching
+
+Sorting
+
+Tree
+
+Graph
+
+
+// EXERCISE DATA STRUCTURES //
+
+
+Write program to read and display N numbers using an array.
+
+Write a program to find the mean of n number using arrays.
+
+Write a program to print the position of the smallest number of n numbers using arrays.
+
+Write a program to find the second largest of N numbers using an array.
+
+Write a program to enter n number of digits.Form a number using these digits.
+
+Write a program to find whether the array of integers contains a duplicate number.
+
+Write a program to insert a number at a given location in an array.
+
+Write a program to insert a number in an array that is already sorted in ascending order.
+
+Write a program to delete a number from a given location in an array.
+
+Write a program to delete a number from an array that is already sorted in ascending order.
+
+Write a program to delete a number from an array that is already sorted in ascending order.
+
+Write a program to merge two sorted arrays.
+
+Write a program to read an array of n numbers and then findthe smallest number.
+
+Write a program to interchange the largest and the smallest number in an array.
+
+Write a program to display an array of given numbers.
+
+Write a program to print the elements of a 2D array.
+
+Write a program to generate Pascal's triangle.
+
+In a small company there are five salesmen.Each salesman is suppoded to sell three products.Write a program using a 2D array to print(i) the total sales by each salesman and (ii) total sales of each item.
+
+Write a program to read a 2D array marks which stores the marks of five students in three subjects. Write a program to display the highest marks in each subject.
+
+Write a program to read and display a 3*3 matrix.
+
+Write a program to transpose a 3*3 matrix.
+
+Write a program to input two m*n matrices and then calculate the sum of theis corresponding elements and sotre it in a third m*n matrix.
+
+Write a program to multiply two m*n matrices.
+
+Write a program to fill a square matrix with value zero on the diagonals, 1 on the upper right triangle, and =1 on the lower left triangle.
+
+Write a program to read and display a 3*3 matrix using pointer.
+
+
+Write a program to create a linked list and perform insertions and deletions of all cases. Write functions to sort and finally delete the entire list at once.
+
+Write a program to create a circular liked list. Perfom insertion and deletion at the beginning and end of the list.
+
+Write a program to create a doubly linked list and perfom insertions and deletions in all cases.
+
+Write a program to create a circular doubly linked list and perform insertions and deletions at thee beginning and end of the list.
+
+Write a program to implement a header linked list.
+
+Write a program to store a polynomial using linked list. Also, perform addition and subtraction on two polynomials.
+
+Write a program to perform Push,Pop, and Peek operations on a stach.
+
+Write a program to implement a linked stack;
+
+Write a program to implement multiple stacks.
+
+Write a program to reverse a list of given numbers.
+
+Write a program to chekck nesting of parentheses using a stack;
+
+Write a program to convert and infix expression into its equivalent postfix notation.
+
+Write a program to evaluate a postfix expression.
+
+Write a program to convert an infix expression to a prefix expression.
+
+Write a program to evaluate a prefix expression.
+
+Write a program to calculate the factorial of a given number.
+
+Write a program to calculate the GCD of two numbers using recursive functions.
+
+Write a program to print the fibonacci series using recursion.
+
+
+
+
+Write a program to implement a linear queue;
+
+Write a program to implement a linked queue;
+
+Write a program to implement a circular queue;
+
+Write a program to implement input and output restricted dques.
+
+Write a program to implement a priority queue;
+
+Write a program to implement multiple queues;
+
+Write a program which finds the solution of Josephus problem using a circular linked list;
+
+Searching:
+Write a program to search an element in an array using the linear search technique;
+
+Write a program to search an element in an array using binary search;
+
+Write a program to search an element in an array using interpolation search;
+
+Write a program to search an element in an array using jump search;
+
+
+Sorting:
+Write a program to enter n numbers in an array. Redisplay the array with elements being sorted in ascending order;
+
+Write a program to sort an array using insertion sort algorithm;
+
+Write a program to sort an array using insertion sort algorithm;
+
+Write a program to sort an array using selection sort algorithm;
+
+Write a program to implement merge sort;
+
+Write a program to implement quick sort algorithm;
+
+Write a program to implement radix osrt algorithm;
+
+Write a program to implement heap sort algorithm;
+
+Write a program to implement shell sort algorithm;
+
+Write a program to implement tree sort algorithm;
+
+
+Write a program to create a binary search tree and perform all the operations;
+
+Write a program to implement simple right in=threaded binary trees;
+
+Write a program that shows insertion operation in an AVL tree;
+
+Write a program to create a graph of n vertices using an adjacency list. Also write the code to read and print its information and finally to delete the graph.
+
+Write a program to implement the breadth=first search lagorithm;
+
+Write a program to implement the depth=first search algorithm;
+

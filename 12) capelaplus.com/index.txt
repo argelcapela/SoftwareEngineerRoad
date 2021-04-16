@@ -1,0 +1,10 @@
+->capelaplus.com WITH disney+ architecture (html,css,js,php)
+
+->jogo da velha; (c)
+
+->jogo da memória; (c)
+
+->jogo da cobra; (c)
+
+->joguinho tipo mario; (c)
+

@@ -1,0 +1,39 @@
+_____ARGEL CAPELA #SoftwareEngineerRoad____
+
+1)SOLID FOUNDATION:
+	-> GIT;						(OK)
+
+	-> Computer Science Theory //
+	 Developer Road Map Topics Theory;		(_)
+
+	-> SO(s)					(_)
+		-> Arch Linux				(OK)
+			-> Basic Linux Shell		(OK)
+			-> Advanced Linux Shell		(OK)			
+
+		-> Windows;				(_)
+		-> !!Mac(if possible)!!;		(_)
+
+	-> Math 					(_)			
+
+	-> Typing;					(_)
+
+	-> C:						(_)		  
+		-> Language Foundations;		(!!)		
+		-> Exercise L. Foundations;		(_)		
+		-> Data Structures;			(_)		
+		-> Exercise Data Structures;		(_)
+	
+
+	-> HTML,CSS					(OK)
+
+	-> JS (OOP)					(!!)
+
+	-> PHP (OOP)					(!!)
+	
+	-> capelaplus.com				(!!)
+			
+	-> BUSCAR VAGA DE ESTÁGIO SP;
+
+
+
