@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+
+<input id="calendario" type="date"  >
+<button type="button" id="btnc" onclick="pegaD()" >OK</button>
+
+
+<hr>
+<h1>Exemplo 2 - Transform date in milisegundos</h1>
+<span id="demo"></span>
+<br><br>
+<span id="demo2"></span>
+
+
+
+
+
+
+<script>
+
+
+
+// get atual data...
+var agora = new Date();
+
+
+
+// Convert Date String to Miliseconds | Date.parse or getTime()...
+var agoraEmMilisegundos = Date.parse(new Date());
+document.getElementById("demo").innerHTML="Em Milisegundos: "+agoraEmMilisegundos;
+
+
+
+// From miliseconds to date...
+var deMiliSeguParaData = new Date(agoraEmMilisegundos);
+document.getElementById("demo2").innerHTML="Em Data: "+deMiliSeguParaData;
+
+
+// get data in calendario and operate with it..
+function pegaD()
+{
+	var c = document.getElementById("calendario").value;
+	alert(c);
+}
+
+
+
+// get age of someone...
+
+
+// resting time for something happen...
+
+
+
+// save data on BD...
+
+
+
+// get data from BD...
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body
+{
+	font-family:"Helvetica";
+	background:pink;
+}
+
+section
+{
+	width:80%;
+	background:white;
+	border-radius:20px;
+	margin:auto;
+}
+
+section h3
+{
+	text-align:center;
+	padding:30px 0;
+}
+
+header input 
+{
+	width:100%;
+	padding:10px 0;
+	border:1px solid pink;
+	margin:0 0 20px 0;
+	font-size:60px;
+}
+
+
+
+nav button
+{
+	width:25%;
+	float:left;
+	padding:30px 0;
+	border:none;
+	background:white;
+	font-size:25px;
+}
+
+nav input[value="0"]
+{
+	width:50%;
+}
+
+nav button:hover{
+	background:pink;
+	cursor:pointer;
+	transition:linear 0.5s;
+}
+
+
+footer 
+{
+	clear:both;
+	width:100%;
+	padding:30px 0;
+	text-align:center;
+}

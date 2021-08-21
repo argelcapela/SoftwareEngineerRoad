@@ -1,0 +1,63 @@
+body{
+	font-family:verdana;
+	background:#303f8f;
+	/* cover: repete pequeno até preencher ;   */
+	/* contain: estica ele pra preenche a tela toda ;   */
+
+
+}
+
+#calc
+{
+	width:500px;
+	background:white;
+	border:1px solid #ccc;
+	border-radius:5px;
+	margin:auto;
+	margin-top:5%;
+
+}
+
+#calc h3
+{
+	text-align:center;
+	margin:5%;
+	color:#303f8f;
+}
+
+/* selecionar input somente text no CSS */
+#calc input[type=text]
+{
+	border:none;
+	width:100%;
+	height:70px;
+	background:;
+	font-size:60px;
+	border-bottom:1px solid black;
+	
+}
+
+
+#calc button
+{
+	width:25%;
+	height:50px;
+	float:left;
+	background:white;
+	border:none;
+	color:#303f8f;
+	font-size:20px;
+
+}
+
+#calc button:hover{
+	cursor:pointer;
+	background:#303f8f;
+	color:white;
+}
+
+footer{
+	padding:5%;
+	text-align:center;
+	clear:both;
+}

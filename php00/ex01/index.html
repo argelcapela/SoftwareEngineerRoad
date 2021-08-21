@@ -1,0 +1,93 @@
+<html>
+	<head>
+		<title>PDO BÁSICO</title>
+
+<style>
+
+*
+{
+	border:none;
+	margin:none;
+}
+
+body
+{
+	font-family:"Verdana";
+	box-sizing:border-box;
+}
+
+section
+{
+	width:90%;
+	margin:auto;
+}
+
+nav
+{
+	background:black;
+	color:white;
+	text-align:center;
+}
+
+iframe
+{
+	width:100%;
+	height:500px;
+}
+
+
+
+</style>
+
+	</head>
+
+	<body>
+		<section>
+			<nav>
+				<form name="myRadios">
+					<input type="radio" name="pdobasico" value="select.php" checked="true"> SELECT
+
+					<input type="radio" name="pdobasico" value="insert.php" > INSERT
+
+					<input type="radio" name="pdobasico" value="delete.php" >
+					DELETE
+
+					<input type="radio" name="pdobasico" value="update.php" >
+					UPDATE		
+				</form>
+			</nav>
+
+			<article>
+				<iframe src="select.php">				</iframe>
+			</article>
+		</section>
+
+
+		<script>
+function mudaPagina(x)
+{
+	document.querySelector("article iframe").src=x.value;
+}
+
+var pb = document.myRadios.pdobasico;
+var pbt = pb.length;
+var x = 0;
+
+while(x < pbt)
+{
+
+pb[x].onclick = function()
+{
+	mudaPagina(this);
+};
+
+x++;
+}
+
+
+
+
+
+</script>
+	</body>
+</html>

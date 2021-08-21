@@ -1,0 +1,83 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define size 10
+
+int smallest(int arr[],int k,int n);
+
+void selection_sort(int arr[],int n);
+
+void main(int argc,char *argv[])
+{
+// Initializing the Array:
+int arr[size],num,i,n,beg,end,mid,found=0;
+printf("\nEnter the number of elements in the array: ");
+scanf("%d",&n);
+printf("\n Enter the elements:\n ");
+for(i=0;i<n;++i)
+{scanf("%d",&arr[i]);}
+
+// Order the Arrays in the list:
+selection_sort(arr,n);
+printf("\n The sorted array is: \n");
+for(i=0;i<n;i++)
+printf("%d",arr[i]);
+
+printf("\n\nEnter the number that has to be searched: \n");
+scanf("%d",&num);
+
+// Start the Binary Search:
+/////////////////////////////////////////////////
+beg=0,end=n,found=0;
+while(beg<=end)
+{
+mid=(beg+end)/2;
+if(arr[mid]==num)
+{
+found=1;
+printf("\nElement found in position %d",mid);
+break;
+}
+else if(arr[mid]>num)
+end=mid-1;
+else
+beg=mid+1;
+}
+if(found==0&&beg>end)
+printf("\n%d was not found in array!");
+
+
+
+/////////////////////////////////////////////////
+}
+
+
+
+
+int smallest(int arr[],int k,int n)
+{
+int pos=k,small=arr[k],i;
+for(i=k+1;i<n;i++)
+{
+if(arr[i]<small)
+{
+small=arr[i];
+pos=i;
+}
+}
+return pos;
+}
+
+void selection_sort(int arr[], int n)
+{
+int k,pos,temp;
+for(k=0;k<n;k++)
+{
+pos=smallest(arr,k,n);
+temp=arr[k];
+arr[k]=arr[pos];
+arr[pos]=temp;
+}
+}
+
+
+

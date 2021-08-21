@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style>
+
+*
+{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+[class*="c-"]
+{
+	float:left;
+}
+
+section::after
+{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+
+body
+{
+	font-family:sans-serif;
+	text-align:center;
+}
+
+header {
+	background:red;
+	padding:30px;
+}
+
+nav{
+	color:white;
+	background:black;
+	padding:10px;
+}
+
+.esquerda
+{
+	background:green;
+}
+
+.direita
+{
+	background:yellow;
+}
+
+footer
+{
+	background:gray;
+	padding:40px;
+}
+
+
+
+
+
+[class*="c-"]
+{
+	width:100%;
+	height:400px;
+}
+
+@media only screen and (min-width:600px)
+{
+.c-m-1{width:8.33%;}
+.c-m-2{width:16.33%;}
+.c-m-3{width:25%;}
+.c-m-4{width:33.33%;}
+.c-m-5{width:41.66%;}
+.c-m-6{width:50%;}
+.c-m-7{width:58.33%;}
+.c-m-8{width:66.33%;}
+.c-m-9{width:75%;}
+.c-m-10{width:83.33%;}
+.c-m-11{width:91.66%;}
+.c-m-12{width:100%;}
+
+}
+
+@media only screen and (min-width:768px)
+{
+
+.c-t-1{width:8.33%;}
+.c-t-2{width:16.33%;}
+.c-t-3{width:25%;}
+.c-t-4{width:33.33%;}
+.c-t-5{width:41.66%;}
+.c-t-6{width:50%;}
+.c-t-7{width:58.33%;}
+.c-t-8{width:66.33%;}
+.c-t-9{width:75%;}
+.c-t-10{width:83.33%;}
+.c-t-11{width:91.66%;}
+.c-t-12{width:100%;}
+
+
+}
+
+@media only screen and (min-width: 990px)
+{
+
+.c-d-1{width:8.33%;}
+.c-d-2{width:16.33%;}
+.c-d-3{width:25%;}
+.c-d-4{width:33.33%;}
+.c-d-5{width:41.66%;}
+.c-d-6{width:50%;}
+.c-d-7{width:58.33%;}
+.c-d-8{width:66.66%;}
+.c-d-9{width:75%;}
+.c-d-10{width:83.33%;}
+.c-d-11{width:91.66%;}
+.c-d-12{width:100%;}
+
+}
+
+
+
+
+
+</style>	
+</head>
+<body>
+<header>
+	<H1>Topo</H1>
+</header>
+<section>
+<nav class="c-m-12  c-t-12   c-d-12">
+	<label>Menu de Cima</label>
+</nav>
+
+<aside class="esquerda c-m-12  c-t-3   c-d-3">
+	<label>Esquerda</label>
+</aside>
+
+<article class="c-m-12   c-t-9  c-d-6">
+	<label>Meio</label>
+</article>
+
+<aside class="direita c-m-12    c-t-12   c-d-3">
+	<label>Direita</label>
+</aside>
+
+
+</section>
+
+<footer>
+	<label>By Argel Capela</label>
+</footer>
+
+</body>
+</html>

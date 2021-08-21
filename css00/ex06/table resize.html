@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style>
+
+td /* solo las celulas e no las colunas - padron margin entre cedulas*/
+{
+	border:1px solid black;
+
+}
+
+tr /* todo - padron margin entre cedulas */
+{
+	border:1px solid black;
+	
+}
+
+th /* las cedulas de las colunas*/
+{
+	border:1px solid black;
+
+}
+
+thead /* en todo el topo */
+{
+	
+}
+
+thead /* en todo el topo */
+{
+	
+}
+
+tbody /* solo en el body*/
+{
+	
+}
+
+tfoot
+{
+
+}
+
+table /* add en toda la tabela - transpassa el espacio entre las cedulas*/
+{
+	
+	border-collapse: collapse;
+	border-spacing: 0;
+	overflow-x: auto;
+
+}
+
+
+
+td:nth-child(1),th:nth-child(1)
+{
+	width:25%;
+}
+
+td:nth-child(2),th:nth-child(2)
+{
+	width:50%;
+}
+
+td:nth-child(3),th:nth-child(3)
+{
+	width:12.5%;
+}
+
+td:nth-child(4),th:nth-child(4)
+{
+	width:12.5%;
+}
+
+
+	td:nth-child(4){display:none;}
+	th:nth-child(4){display:none;}
+
+	td:nth-child(3){display:none;}
+	th:nth-child(3){display:none;}
+
+	td:nth-child(2){display:none;}
+	th:nth-child(2){display:none;}
+
+
+
+
+	
+@media (min-width: 600px)
+{
+
+	td:nth-child(4){display:table-cell;}
+	th:nth-child(4){display:table-cell;}
+
+	td:nth-child(3){display:table-cell;}
+	th:nth-child(3){display:table-cell;}
+
+	td:nth-child(2){display:table-cell;}
+	th:nth-child(2){display:table-cell;}
+
+}	
+	
+
+</style>
+
+</head>
+<body>
+
+	<table>
+		<thead>
+			<tr>
+			<th>Coluna 1</th>
+			<th>Coluna 2</th>
+			<th>Coluna 3</th>
+			<th>Coluna 4</th>
+			</tr>
+		</thead>
+
+	
+			<tr>
+				
+				<td>Célula 1</td>
+				<td>Célula 2</td>
+				<td>Célula 3</td>
+				<td rowspan="2">Célula 4</td> <!-- MESCLANDO NA HORIZONTAL  -->
+			
+			</tr>
+			<tr>
+				<td colspan="3" >Célula 1</td> <!-- MESCLANDO NA VERTICAL -->
+				
+			</tr>
+		
+	</table>
+
+</body>
+</html>

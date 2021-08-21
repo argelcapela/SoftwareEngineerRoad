@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<style>
+/* FIX */
+*{
+	box-sizing:border-box;
+}
+
+[class*="col-"]
+{
+	float:left;
+	padding:5px;
+}
+
+
+
+/* BASIC STYLE */
+
+
+header
+{
+	background:red;
+	padding:15px;
+	color:white;
+	text-align:center;
+}
+
+nav ul
+{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+nav li
+{
+	padding:10px;
+	background:lightblue;
+
+}
+
+nav li:hover
+{
+	cursor:pointer;
+}
+
+aside
+{
+	text-align:center;
+	background:green;
+	padding:5px;
+	box-shadow:0 1px 3px rgba(0,0,0.12), 0 1px 2px rgba(0,0,0.24);
+}
+
+footer
+{
+	padding:15px;
+	background:#ccc;
+	text-align:center;
+}
+
+section::after
+{
+	content:"";
+
+	display:table;
+		clear:both;
+}
+
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+[class*="col-"]
+{
+	width:100%;
+}
+
+@media only screen and (min-width: 600px) 
+{
+.col-mobile-1{width:8.33%;}
+.col-mobile-2{width:16.33%;}	
+.col-mobile-3{width:25%;}
+.col-mobile-4{width:33.33%;}
+.col-mobile-5{width:41.66%;}
+.col-mobile-6{width:50%;}
+.col-mobile-7{width:58.33%;}
+.col-mobile-8{width:66.66%;}
+.col-mobile-9{width:75%;}
+.col-mobile-10{width:83.33%;}
+.col-mobile-11{width:91.33%;}
+.col-mobile-12{width:100%;}
+
+}
+/* TABLET */
+@media only screen and (min-width: 768px)
+{
+.col-tablet-1{width:8.33%;}
+.col-tablet-2{width:16.33%;}	
+.col-tablet-3{width:25%;}
+.col-tablet-4{width:33.33%;}
+.col-tablet-5{width:41.66%;}
+.col-tablet-6{width:50%;}
+.col-tablet-8{width:66.66%;}
+.col-tablet-7{width:58.33%;}
+.col-tablet-11{width:91.33%;}
+.col-tablet-9{width:75%;}
+.col-tablet-10{width:83.33%;}
+.col-tablet-12{width:100%;}
+}
+/* DESKTOP */
+@media only screen and (min-width: 990px)
+{
+.col-desktop-1{width:8.33%;}
+.col-desktop-2{width:16.33%;}	
+.col-desktop-3{width:25%;}
+.col-desktop-4{width:33.33%;}
+.col-desktop-5{width:41.66%;}
+.col-desktop-6{width:50%;}
+.col-desktop-7{width:58.33%;}
+.col-desktop-8{width:66.66%;}
+.col-desktop-9{width:75%;}
+.col-desktop-10{width:83.33%;}
+.col-desktop-11{width:91.33%;}
+.col-desktop-12{width:100%;}
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+<header>
+	<h1>Lore m fdsafdsafdsafsadfsadf </h1>
+</header>
+
+<section>
+<nav class="col-mobile-12 col-tablet-3 col-desktop-3 ">
+	<ul >
+		<li>New York</li>
+		<li>Miami</li>
+		<li>Tokyo</li>
+		<li>Japan</li>
+	</ul>
+</nav>
+
+<article class="col-mobile-12 col-tablet-9 col-desktop-6">
+	<h1>
+		Hello Wolrd!
+	</h1>
+	<p>Lore m fdsafdsafdsafsadfsadf</p>
+</article>
+
+<aside class="col-mobile-12 col-tablet-12 col-desktop-3">
+	<h2>
+		Loreem	
+	</h2>
+	<p>Lore m fdsafdsafdsafsadfsadf</p>
+	<h2>Lore sadfdsafm</h2>
+	<p>Lore m fdsafdsafdsafsadfsadf</p>
+	<h2> aslkdjflksadf </h2>
+    <p>sadfdsfdsafd</p>
+</aside>
+
+</section>
+
+<footer>
+	<p> By Capela Lore m fdsafdsafdsafsadfsadf</p>
+</footer>
+
+</body>
+</html>
+

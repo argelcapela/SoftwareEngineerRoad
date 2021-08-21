@@ -1,0 +1,58 @@
+/* BASE */
+*,::after,::before
+{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+
+
+/*PORTRAIT PHONE*/
+.projeto_container > .row:nth-child(1) > .col-12:nth-child(2){margin-top:20px;}
+.projeto_container > .row:nth-child(1){margin-bottom:20px;}
+.projeto_container > .row:nth-child(2){margin-bottom:30px;}
+.projeto_container > .row:nth-child(3){margin-bottom:30px;}
+
+.img_projeto{width:200px;}
+.icon_technology{width:50px;}
+
+.projeto_container_bg{background:#ccc;
+				   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+				   padding-top:50px;
+				   padding-bottom:50px;
+				}
+
+
+/*LANDSCAPE PHONE*/
+@media (min-width:576px)
+{
+.img_projeto{width:80%;}
+}
+
+/*TABLET PHONE*/
+@media (min-width:768px)
+{
+.img_projeto{width:100%;}
+.projeto_container > .row:nth-child(1) > .col-12:nth-child(2){margin-top:0;}	
+
+}
+
+/*DESKTOP*/
+@media (min-width:992px)
+{
+
+}
+
+/*LARGE DESKTOP*/
+@media (min-width:1200px)
+{
+
+}
+
+/*TV(S)*/
+@media(min-width:1400px)
+{
+
+}
+

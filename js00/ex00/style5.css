@@ -1,0 +1,45 @@
+body
+{
+	text-align:center;
+	background:url("img/wp1.jpg");
+	font-family:"arial";
+}
+
+section
+{
+	width:200px;
+	
+	background:rgb(217,229,	241);
+	margin:auto;
+	margin-top:20px;
+}
+
+h3
+{
+	font-size:10px;
+	height:20px;
+}
+
+header input
+{
+	width:94%;
+	height:30px;
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+
+nav button
+{
+	float:left;
+	width:20%;
+	height:30px;
+	margin:3px 0 3px 3px;
+	font-size:10px;
+
+
+}
+
+footer
+{
+	clear:both;
+}
